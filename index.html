@@ -4,67 +4,40 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Agenda Zap | Exemplo de Embed</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
-      body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-      }
       .agenda-zap-button {
-        margin-top: 20px;
-        margin-bottom: 20px;
         background-color: #148a3f;
-        color: #fff;
-        padding: 14px 24px;
-        border: none;
-        border-radius: 20px;
-        cursor: pointer;
-        font-size: 16px;
-        font-weight: bold;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      }
-      .container {
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-      code {
-        color: #333;
-        background-color: #f4f4f4;
-        padding: 10px;
-        border-radius: 5px;
-        margin-top: 20px;
-        display: block;
-        margin-bottom: 20px;
       }
     </style>
   </head>
-  <body>
-    <main class="container">
-      <h1>Agenda Zap | Exemplo de Embed</h1>
-      <p>Este é um exemplo de como você pode adicionar o botão de agendamento do Agenda Zap em seu site.</p>
+  <body class="font-sans bg-gray-100">
+    <main class="container mx-auto px-4 py-8 max-w-3xl">
+      <h1 class="text-3xl font-bold text-center mb-6">Agenda Zap - Exemplo de Embed</h1>
+      <h2 class="text-center mb-8">Este é um exemplo de como você pode adicionar o botão de agendamento do Agenda Zap em seu site.</h2>
 
-      <code>
-        &lt;!-- Adicione o script no head ou no final do body --&gt;
-        <br />
-        &lt;script src=&quot;https://agenda-zap.com/embed.js&quot;&gt;&lt;/script&gt;
-        <br />
-        <br />
-        &lt;!-- Adicione o bot&atilde;o onde desejar --&gt;
-        <br />
-        &lt;button class=&quot;agenda-zap-button&quot; data-agenda-zap-slug=&quot;demo&quot;&gt;Agendamento&lt;/button&gt;
-      </code>
+      <pre class="bg-gray-200 p-4 rounded-lg overflow-x-auto mb-8 text-sm"><code>&lt;!-- Adicione o script no head ou no final do body --&gt;
+&lt;script src=&quot;https://agenda-zap.com/embed.js&quot;&gt;&lt;/script&gt;
 
-      <p>O botão a seguir foi criado com o código acima. Clique no botão para ver o formulário de agendamento.</p>
+&lt;!-- Adicione o bot&atilde;o onde desejar --&gt;
+&lt;button class=&quot;agenda-zap-button&quot; data-agenda-zap-slug=&quot;demo&quot;&gt;Agendamento&lt;/button&gt;</code></pre>
+
+      <p class="text-center mb-6">O botão a seguir foi criado com o código acima. Clique no botão para ver o formulário de agendamento.</p>
 
       <!-- Adicione o botão onde desejar -->
-      <button class="agenda-zap-button" data-agenda-zap-slug="demo">Agendamento</button>
+      <div class="flex justify-center mb-8">
+        <button
+          class="agenda-zap-button text-white px-6 py-3 rounded-full font-bold text-lg shadow-md hover:shadow-lg transition duration-300"
+          data-agenda-zap-slug="demo"
+        >
+          Agendamento
+        </button>
+      </div>
 
-      <p>Para mais informações, acesse o site do <a href="https://agenda-zap.com" target="_blank">Agenda Zap</a>.</p>
-      <p>Boas Vendas!</p>
+      <p class="text-center mb-2">
+        Para mais informações, acesse o site do <a href="https://agenda-zap.com" target="_blank" class="text-blue-600 hover:underline">Agenda Zap</a>.
+      </p>
+      <p class="text-center font-bold">Boas Vendas! 🥳</p>
     </main>
 
     <!-- Adicione o script no head ou no final do body -->
