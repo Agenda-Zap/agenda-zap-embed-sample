@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agenda Zap | Exemplo de Embed</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      .agenda-zap-button {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        background-color: #148a3f;
+        color: #fff;
+        padding: 14px 24px;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: bold;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      code {
+        color: #333;
+        background-color: #f4f4f4;
+        padding: 10px;
+        border-radius: 5px;
+        margin-top: 20px;
+        display: block;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <h1>Agenda Zap | Exemplo de Embed</h1>
+      <p>Este é um exemplo de como você pode adicionar o botão de agendamento do Agenda Zap em seu site.</p>
+
+      <code>
+        &lt;!-- Adicione o script no head ou no final do body --&gt;
+        <br />
+        &lt;script src=&quot;https://agenda-zap.com/embed.js&quot;&gt;&lt;/script&gt;
+        <br />
+        <br />
+        &lt;!-- Adicione o bot&atilde;o onde desejar --&gt;
+        <br />
+        &lt;button class=&quot;agenda-zap-button&quot; data-agenda-zap-slug=&quot;demo&quot;&gt;Agendamento&lt;/button&gt;
+      </code>
+
+      <p>O botão a seguir foi criado com o código acima. Clique no botão para ver o formulário de agendamento.</p>
+
+      <!-- Adicione o botão onde desejar -->
+      <button class="agenda-zap-button" data-agenda-zap-slug="demo">Agendamento</button>
+
+      <p>Para mais informações, acesse o site do <a href="https://agenda-zap.com" target="_blank">Agenda Zap</a>.</p>
+      <p>Boas Vendas!</p>
+    </main>
+
+    <!-- Adicione o script no head ou no final do body -->
+    <script src="https://agenda-zap.com/embed.js"></script>
+  </body>
+</html>
